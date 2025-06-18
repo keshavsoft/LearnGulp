@@ -1,0 +1,10 @@
+node_modules/
+.temp/
+html&css/
+dist/
+publicDir/
+
+*.zip
+docs/
+dist/
+.DS_Store
