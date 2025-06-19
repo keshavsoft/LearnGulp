@@ -1,52 +1,70 @@
-<header>
-  <div class="px-3 py-2 border-bottom" style="background-color: black;">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="Home.html" class="logo d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi me-2" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M9.218 2h2.402L16 12.987h-2.402zM4.379 2h2.512l4.38 10.987H8.82l-.895-2.308h-4.58l-.896 2.307H0L4.38 2.001zm2.755 6.64L5.635 4.777 4.137 8.64z" />
-          </svg>
-        </a>
+<nav class="navbar navbar-expand-xxl navbar-dark bg-dark py-2">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand mx-auto mx-xxl-0 d-flex align-items-center" href="Home.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi me-2"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M9.218 2h2.402L16 12.987h-2.402zM4.379 2h2.512l4.38 10.987H8.82l-.895-2.308h-4.58l-.896 2.307H0L4.38 2.001zm2.755 6.64L5.635 4.777 4.137 8.64z" />
+      </svg>
+    </a>
 
-        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-          <li>
-            <a href="Home.html" class="nav-link text-secondary @@homeActive">
-              <i class="bi bi-house d-block mx-auto" style="font-size: 1.2rem;"></i>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="aboutUs.html" class="nav-link text-secondary @@aboutActive">
-              <i class="bi bi-info-circle d-block mx-auto" style="font-size: 1.2rem;"></i>
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="Contact.html" class="nav-link text-secondary @@contactActive">
-              <i class="bi bi-telephone d-block mx-auto" style="font-size: 1.2rem;"></i>
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="locateUs.html" class="nav-link text-secondary @@locateActive">
-              <i class="bi bi-geo-alt d-block mx-auto" style="font-size: 1.2rem;"></i>
-              Locate Us
-            </a>
-          </li>
-        </ul>
+    <!-- Hamburger toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible section -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <div class="container-fluid d-xxl-flex justify-content-between align-items-xxl-center">
+
+        <!-- Nav Links -->
+        <div class="d-flex flex-column flex-xxl-row align-items-start align-items-xxl-center gap-2">
+          <ul class="navbar-nav flex-column flex-xxl-row gap-2 gap-xxl-0">
+            <li class="nav-item">
+              <a href="Home.html"
+                class="nav-link d-flex flex-row flex-xxl-column align-items-center gap-1 @@homeActive">
+                <i class="bi bi-house" style="font-size: 1.2rem;"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutUs.html"
+                class="nav-link d-flex flex-row flex-xxl-column align-items-center gap-1 @@aboutActive">
+                <i class="bi bi-info-circle" style="font-size: 1.2rem;"></i>
+                <span>About Us</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="Contact.html"
+                class="nav-link d-flex flex-row flex-xxl-column align-items-center gap-1 @@contactActive">
+                <i class="bi bi-telephone" style="font-size: 1.2rem;"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="locateUs.html"
+                class="nav-link d-flex flex-row flex-xxl-column align-items-center gap-1 @@locateActive">
+                <i class="bi bi-geo-alt" style="font-size: 1.2rem;"></i>
+                <span>Locate Us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search & Buttons -->
+        <div class="col-auto mt-3 mt-xxl-0 d-flex flex-column flex-xxl-row align-items-xxl-center gap-2">
+          <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          </form>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-light text-dark">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
-
-  <div class="px-3 py-2 border-bottom mb-3">
-    <div class="container d-flex flex-wrap justify-content-center">
-      <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-        <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
-      </form>
-      <div class="text-end">
-        <button type="button" class="btn btn-light text-dark me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
-    </div>
-  </div>
-</header>
+</nav>
